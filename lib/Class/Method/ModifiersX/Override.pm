@@ -120,6 +120,11 @@ C<< around >> instead. This module mostly exists as an answer to people
 who complain that L<Moo> doesn't support C<override>/C<super>, but it
 may also be helpful porting Moose code to Moo.
 
+=head1 BUGS
+
+Please report any bugs to
+L<http://rt.cpan.org/Dist/Display.html?Queue=Class-Method-ModifiersX-Override>.
+
 =head1 DEPENDENCIES
 
 L<Class::Method::ModifiersX::Override> requires Perl 5.008, and the
@@ -130,11 +135,6 @@ require L<Moo> and L<Role::Tiny> respectively. However, the installation
 scripts for this distribution do not check that these are installed. If
 you use L<MooX::Override> or L<Role::TinyX::Override>, it is assumed that
 you have installed their dependencies separately.
-
-=head1 BUGS
-
-Please report any bugs to
-L<http://rt.cpan.org/Dist/Display.html?Queue=Class-Method-ModifiersX-Override>.
 
 =head1 SEE ALSO
 
