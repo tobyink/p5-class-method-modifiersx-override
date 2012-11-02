@@ -1,0 +1,9 @@
+# This file provides instructions for packaging.
+
+`Class-Method-ModifiersX-Override`
+	perl_version_from m`Class::Method::ModifiersX::Override`;
+	version_from      m`Class::Method::ModifiersX::Override`;
+	readme_from       m`Class::Method::ModifiersX::Override`;
+	test_requires     p`Test::More 0.61` ;
+	.
+
