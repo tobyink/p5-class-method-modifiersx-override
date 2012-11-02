@@ -114,6 +114,12 @@ when multiple method modifiers are applied to the same method, the order
 in which they are applied might not match Moose, where C<override> modifiers
 are "innermost".
 
+Given that this implementation of C<< override >> piggybacks onto
+C<< around >>, there's almost no reason to use it; you can just use
+C<< around >> instead. This module mostly exists as an answer to people
+who complain that L<Moo> doesn't support C<override>/C<super>, but it
+may also be helpful porting Moose code to Moo.
+
 =head1 DEPENDENCIES
 
 L<Class::Method::ModifiersX::Override> requires Perl 5.008, and the
