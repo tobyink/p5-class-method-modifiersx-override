@@ -15,6 +15,7 @@ our %EXPORT_TAGS = (
 	all => [our @EXPORT_OK = our @EXPORT = qw( override super )],
 );
 
+use Carp qw( croak );
 use Class::Method::Modifiers qw( install_modifier );
 
 our $SUPER_PACKAGE = undef;
@@ -33,11 +34,18 @@ sub _mk_around
 	}
 }
 
+our %OVERRIDDEN;
 sub override
 {
 	my $into = caller(0);
 	my $code = pop;
 	my @name = @_;
+	
+	for my $method (@name)
+	{
+		croak "Method '$method' in class '$into' overridden twice"
+			if $OVERRIDDEN{$into}{$method}++;
+	}
 	
 	my $sub = _mk_around($into, $code);
 	install_modifier($into, 'around', @name, $sub);
