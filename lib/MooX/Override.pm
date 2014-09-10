@@ -7,7 +7,7 @@ no warnings qw( once void uninitialized );
 
 BEGIN {
 	$MooX::Override::AUTHORITY = 'cpan:TOBYINK';
-	$MooX::Override::VERSION   = '0.001';
+	$MooX::Override::VERSION   = '0.002';
 }
 
 sub import

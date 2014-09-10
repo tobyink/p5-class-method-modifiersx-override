@@ -7,7 +7,7 @@ no warnings qw( once void uninitialized );
 
 BEGIN {
 	$Role::TinyX::Override::AUTHORITY = 'cpan:TOBYINK';
-	$Role::TinyX::Override::VERSION   = '0.001';
+	$Role::TinyX::Override::VERSION   = '0.002';
 }
 
 sub import

@@ -7,7 +7,7 @@ no warnings qw( once void uninitialized );
 
 BEGIN {
 	$Class::Method::ModifiersX::Override::AUTHORITY = 'cpan:TOBYINK';
-	$Class::Method::ModifiersX::Override::VERSION   = '0.001';
+	$Class::Method::ModifiersX::Override::VERSION   = '0.002';
 }
 
 use base qw(Exporter);
