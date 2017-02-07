@@ -10,7 +10,7 @@ BEGIN {
 {
 	package Local::Role1;
 	use Moo::Role;
-	use MooX::Override -role;	
+	use MooX::Override -role;
 	override meth => sub { 1 };
 	no Moo::Role;
 }
