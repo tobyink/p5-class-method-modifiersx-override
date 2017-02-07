@@ -11,3 +11,9 @@
 		item "Switch to Dist::Inkt."^^Packaging;
 	].
 
+`Class-Method-ModifiersX-Override 0.003 cpan:TOBYINK`
+	issued    2017-02-07;
+	changeset [
+		item "Mark double override test case as TODO."^^Tests;
+	].
+

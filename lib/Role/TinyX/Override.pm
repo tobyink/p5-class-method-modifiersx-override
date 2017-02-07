@@ -7,7 +7,7 @@ no warnings qw( once void uninitialized );
 
 BEGIN {
 	$Role::TinyX::Override::AUTHORITY = 'cpan:TOBYINK';
-	$Role::TinyX::Override::VERSION   = '0.002';
+	$Role::TinyX::Override::VERSION   = '0.003';
 }
 
 sub import
@@ -94,7 +94,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012, 2014, 2017 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
