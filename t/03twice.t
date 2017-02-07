@@ -23,13 +23,16 @@ BEGIN {
 	no Moo::Role;
 }
 
+local $::TODO = 'not implemented';
+
 ok not eval q{
 	package Local::Class;
 	use Moo;
 	with qw( Local::Role1 Local::Role2 );
 	sub meth { 42 }
+	1;
 };
 
-like($@, qr{monkey});
+like($@, qr{overridden twice});
 
 done_testing();
